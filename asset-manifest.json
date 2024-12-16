@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/anthonycu10/torturedpoetry.git/static/css/main.f855e6bc.css",
+    "main.js": "/anthonycu10/torturedpoetry.git/static/js/main.a1e8f2c7.js",
+    "static/js/488.c4bb205c.chunk.js": "/anthonycu10/torturedpoetry.git/static/js/488.c4bb205c.chunk.js",
+    "static/media/logo.svg": "/anthonycu10/torturedpoetry.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/anthonycu10/torturedpoetry.git/index.html",
+    "main.f855e6bc.css.map": "/anthonycu10/torturedpoetry.git/static/css/main.f855e6bc.css.map",
+    "main.a1e8f2c7.js.map": "/anthonycu10/torturedpoetry.git/static/js/main.a1e8f2c7.js.map",
+    "488.c4bb205c.chunk.js.map": "/anthonycu10/torturedpoetry.git/static/js/488.c4bb205c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.a1e8f2c7.js"
+  ]
+}
