@@ -2,7 +2,101 @@
   text-align: center;
 }
 
-.App-logo {
+/* text, font, stylics */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+body {
+  background-color: #6E6A67;
+  font-family: 'Merriweather', serif;
+  font-size: 19px;
+}
+
+h1 {
+  color: #EEECE9;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
+h2 {
+  color: #EEECE9;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+}
+
+/* Style the typed text */
+.typed-text {
+  font-family: 'Merriweather', serif;  /* Typewriter-style font */
+  font-size: 24px;  /* Adjust size for the text */
+  white-space: nowrap;  /* Prevent wrapping */
+  overflow: hidden;  /* Hide overflow */
+  display: inline-block;
+  border-right: 4px solid white;  /* Simulate the typewriter cursor */
+  padding-right: 4px;
+  animation: blink-caret 0.8s step-end infinite;  /* Cursor blinking animation */
+}
+
+/* Typewriter effects */
+/* Blinking cursor effect */
+@keyframes blink-caret {
+  40% {
+    border-color: transparent;
+  }
+}
+
+/* search bar size */
+input[type="text"] {
+  width: 100%; /* Makes the input take full width of its container */
+  max-width: 600px; /* Optional: You can limit the maximum width */
+  padding: 20px; /* Add padding to make it larger */
+  font-size: 20px; /* Increase font size for better readability */
+  border: 2px solid #EEECE9; /* Optional: Change border color */
+  border-radius: 5px; /* Optional: Make corners rounded */
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+  margin-bottom: 10px; /* Optional: Space below the input */
+  font-family: 'Merriweather', serif;
+}
+
+/* Position the search bar at the bottom of the viewport */
+.search-bar-container {
+  position: fixed;
+  bottom: 10px; /* Adjust the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the container horizontally */
+  width: 100%; /* Optional: Take full width */
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 10; /* Makes sure it's on top of other content */
+}
+
+/* Additional CSS for simulating paper effect */
+.paper-output {
+  position: relative;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: slideOut 3s ease-out; /* Slide-down effect */
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(-200px); /* Start from above the screen */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +129,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
