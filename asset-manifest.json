@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/torturedpoetry/static/css/main.4d9714a8.css",
-    "main.js": "/torturedpoetry/static/js/main.0d172922.js",
+    "main.css": "/torturedpoetry/static/css/main.e8f8e4ea.css",
+    "main.js": "/torturedpoetry/static/js/main.f3595c31.js",
     "static/js/488.c4bb205c.chunk.js": "/torturedpoetry/static/js/488.c4bb205c.chunk.js",
     "index.html": "/torturedpoetry/index.html",
-    "main.4d9714a8.css.map": "/torturedpoetry/static/css/main.4d9714a8.css.map",
-    "main.0d172922.js.map": "/torturedpoetry/static/js/main.0d172922.js.map",
+    "main.e8f8e4ea.css.map": "/torturedpoetry/static/css/main.e8f8e4ea.css.map",
+    "main.f3595c31.js.map": "/torturedpoetry/static/js/main.f3595c31.js.map",
     "488.c4bb205c.chunk.js.map": "/torturedpoetry/static/js/488.c4bb205c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d9714a8.css",
-    "static/js/main.0d172922.js"
+    "static/css/main.e8f8e4ea.css",
+    "static/js/main.f3595c31.js"
   ]
 }
