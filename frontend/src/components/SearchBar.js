@@ -40,6 +40,8 @@ function SongSearch() {
     <div>
       <h2><TypewriterEffect text= "We hereby conduct this post mortem..." /> </h2>
 
+      <div className="line"></div>
+
       <div className='search-bar-container'>
         <input
           type="text"
@@ -52,20 +54,24 @@ function SongSearch() {
 
       {loading && <p>Loading...</p>}
 
-      <ul>
-        {/* Only show the message after a search is performed */}
-        {hasSearched && recommendations.length === 0 && !loading && (
-          <p>No recommendations found.</p>
-        )}
+      <div className="scrollable-container">
+        <ul className = "no-bullets">
+          {/* Only show the message after a search is performed */}
+          {hasSearched && recommendations.length === 0 && !loading && (
+            <p>No recommendations found.</p>
+          )}
 
-        {/* Show the recommendations if any are found */}
-        {recommendations.length > 0 && recommendations.map((song, index) => (
-          <li key={index}>
-            {song.song_title} (Score: {song.similarity_score.toFixed(4)})
-          </li>
-        ))}
-      </ul>
+          {/* Show the recommendations if any are found */}
+          {recommendations.length > 0 && recommendations.map((song, index) => (
+            <li key={index}>
+              {song.song_title} (Score: {song.similarity_score.toFixed(4)})
+            </li>
+          ))}
+        </ul>
+      </div>
+      
     </div>
+
   );
 }
 
