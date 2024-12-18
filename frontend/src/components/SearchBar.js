@@ -13,8 +13,8 @@ function SongSearch() {
     setHasSearched(true);
     setLoading(true); // Set loading state to true while fetching results
 
-    // Fetch request to Flask API
-    fetch(`http://127.0.0.1:5000/recommend?query=${encodeURIComponent(query)}`)
+    // Fetch request to Flask API: `http://127.0.0.1:5000/recommend?query=${encodeURIComponent(query)}`
+    fetch(`/.netlify/functions/recommend?query=${encodeURIComponent(query)}`)
       .then((response) => response.json())
       .then((data) => {
         // Set the recommendations in the state
