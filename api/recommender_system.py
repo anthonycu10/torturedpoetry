@@ -1,7 +1,8 @@
-import pandas as pd
+# api/recommender_system.py
+
+import polars as pl
 import numpy as np
 import re
-import nltk
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -16,7 +17,8 @@ def lemmatize_text(text):
 # method to find search recommendations
 def get_results(user_input):
     # load data
-    df = pd.read_csv('data/songs_lyrics.csv')
+    #filepath = os.path.join(os.path.dirname(__file__), 'data', 'songs_lyrics.csv')
+    df = pl.read_csv('data/songs_lyrics.csv')
 
     # determine the number of words in user search
     search_length = user_input.split()
