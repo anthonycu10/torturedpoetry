@@ -12,28 +12,27 @@ function SearchBar() {
   const handleSearch = () => {
     if (query.trim() === "") return;
     setHasSearched(true);
-    setLoading(true); // Set loading state to true while fetching results
-
+    setLoading(true);
+  
     // Check if running locally
     const isLocal = window.location.hostname === 'localhost';
-
-    // Update the URL to point to Vercel's API endpoint
+  
+    // Use the AWS API Gateway URL in production
     const url = isLocal
       ? `http://localhost:3000/api/serverless?query=${encodeURIComponent(query)}`
-      : `/api/serverless?query=${encodeURIComponent(query)}`;
-
+      : `https://your-api-id.execute-api.us-west-2.amazonaws.com/prod/recommendations?query=${encodeURIComponent(query)}`;
+  
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        // Set the recommendations in the state
-        setRecommendations(data); // Data should be the recommendations directly
-        setLoading(false); // Turn off loading state after fetching data
+        setRecommendations(data);  // Set the recommendations in the state
+        setLoading(false);  // Stop loading
       })
       .catch((error) => {
         console.error("Error fetching recommendations:", error);
-        setLoading(false); // Turn off loading state even if there's an error
+        setLoading(false);  // Stop loading if there's an error
       });
-  };
+  };  
 
   // Handle Enter key press event
   const handleKeyPress = (event) => {
